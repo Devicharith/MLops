@@ -172,7 +172,7 @@ def initialize_weights(module):
 # mlflow.set_tracking_uri("http://localhost:8080")
 
 # Databricks MLFlow
-mlflow.login()
+mlflow.set_tracking_uri("databricks")
 mlflow.set_experiment("/Users/devicharith12@gmail.com/Taxi-Durations")
 
 log_file_path = "training_output.log"
